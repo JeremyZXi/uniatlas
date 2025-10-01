@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_UNI_TOP50uscollegesanduniversitiespublic_13 = function(feature, resolution){
+var style_UNI_TOP50uscollegesanduniversitiespublic_14 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

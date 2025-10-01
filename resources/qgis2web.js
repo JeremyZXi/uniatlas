@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-14081933.677611, 2826935.627803, -9634341.370260, 6675158.123509], map.getSize());
+map.getView().fit([-19849185.167118, -4550499.917168, 19615032.437943, 44927335.427096], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -871,7 +871,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_UNI_TOP50uscollegesanduniversitiespublic_13,
+    layer: lyr_UNI_TOP50uscollegesanduniversitiespublic_14,
     colName: 'name',
     zoom: 10,
     collapsed: true,
