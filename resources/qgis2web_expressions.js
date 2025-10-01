@@ -763,3 +763,17 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_label_usstateboundaries_14_eval_expression(context) {
+    // name
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return feature.get('name') ;
+    } else {
+        return feature.get('name') ;
+    }
+}
