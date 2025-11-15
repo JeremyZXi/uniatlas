@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_Nov12List_22(feature, value, size, resolution, labelText,
+function categories_Universities_Nov15_22(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
@@ -32,14 +32,14 @@ case 'Public':
     })];
                     break;}};
 
-var style_Nov12List_22 = function(feature, resolution){
+var style_Universities_Nov15_22 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
     };
     
     var labelText = ""; 
-    var labelFont = "13.0px \'Times New Roman\', sans-serif";
+    var labelFont = "13.0px \'Charter\', sans-serif";
     var labelFill = "#ffffff";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -98,7 +98,7 @@ var style_Nov12List_22 = function(feature, resolution){
 		];
 	}
     
-    var style = categories_Nov12List_22(feature, value, size, resolution, labelText,
+    var style = categories_Universities_Nov15_22(feature, value, size, resolution, labelText,
                             labelFont, labelFill, bufferColor,
                             bufferWidth, placement);
 
