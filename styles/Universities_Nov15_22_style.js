@@ -7,7 +7,7 @@ function categories_Universities_Nov15_22(feature, value, size, resolution, labe
                 switch(valueStr) {case 'Liberal Arts':
                     return [ new ol.style.Style({
         image: new ol.style.RegularShape({radius: 4.0 + size, points: 3,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(217,217,217,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(255,255,255,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(115,158,198,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(171,214,255,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -16,7 +16,7 @@ function categories_Universities_Nov15_22(feature, value, size, resolution, labe
 case 'Private':
                     return [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(217,217,217,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(255,255,255,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(117,16,18,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(209,27,39,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -25,7 +25,7 @@ case 'Private':
 case 'Public':
                     return [ new ol.style.Style({
         image: new ol.style.RegularShape({radius: 4.0 + size, points: 4,
-            angle: Math.PI/4, displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(220,220,220,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(255,255,255,1.0)'})}),
+            angle: Math.PI/4, displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(39,134,39,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(72,162,49,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -39,7 +39,7 @@ var style_Universities_Nov15_22 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var labelFont = "13.0px \'Charter\', sans-serif";
+    var labelFont = "10.4px \'Georgia\', sans-serif";
     var labelFill = "#ffffff";
     var bufferColor = "";
     var bufferWidth = 0;

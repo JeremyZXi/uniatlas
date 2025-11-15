@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("ESRI:102003").setExtent([-2467539.648990, -1654750.585059, 2421000.065701, 2167198.646426]);
+//ol.proj.get("ESRI:102003").setExtent([-2680931.095907, -2003582.405685, 2561096.780870, 2094730.297977]);
 var wms_layers = [];
 
 
@@ -399,13 +399,9 @@ var jsonSource_AnnualTuition_15 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_AnnualTuition_15.addFeatures(features_AnnualTuition_15);
-cluster_AnnualTuition_15 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_AnnualTuition_15
-});
 var lyr_AnnualTuition_15 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_AnnualTuition_15, 
+                source:jsonSource_AnnualTuition_15, 
                 style: style_AnnualTuition_15,
                 popuplayertitle: 'Annual Tuition',
                 interactive: true,
@@ -425,13 +421,9 @@ var jsonSource_QSRanking2026_16 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_QSRanking2026_16.addFeatures(features_QSRanking2026_16);
-cluster_QSRanking2026_16 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_QSRanking2026_16
-});
 var lyr_QSRanking2026_16 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_QSRanking2026_16, 
+                source:jsonSource_QSRanking2026_16, 
                 style: style_QSRanking2026_16,
                 popuplayertitle: 'QS Ranking(2026)',
                 interactive: true,
@@ -451,13 +443,9 @@ var jsonSource_USNewsRanking2026_17 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_USNewsRanking2026_17.addFeatures(features_USNewsRanking2026_17);
-cluster_USNewsRanking2026_17 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_USNewsRanking2026_17
-});
 var lyr_USNewsRanking2026_17 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_USNewsRanking2026_17, 
+                source:jsonSource_USNewsRanking2026_17, 
                 style: style_USNewsRanking2026_17,
                 popuplayertitle: 'U.S.News Ranking(2026)',
                 interactive: true,
@@ -478,13 +466,9 @@ var jsonSource_TestPolicy_18 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_TestPolicy_18.addFeatures(features_TestPolicy_18);
-cluster_TestPolicy_18 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_TestPolicy_18
-});
 var lyr_TestPolicy_18 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_TestPolicy_18, 
+                source:jsonSource_TestPolicy_18, 
                 style: style_TestPolicy_18,
                 popuplayertitle: 'Test-Policy',
                 interactive: true,
@@ -499,13 +483,9 @@ var jsonSource_AcceptanceRate_19 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_AcceptanceRate_19.addFeatures(features_AcceptanceRate_19);
-cluster_AcceptanceRate_19 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_AcceptanceRate_19
-});
 var lyr_AcceptanceRate_19 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_AcceptanceRate_19, 
+                source:jsonSource_AcceptanceRate_19, 
                 style: style_AcceptanceRate_19,
                 popuplayertitle: 'Acceptance Rate %',
                 interactive: true,
@@ -525,13 +505,9 @@ var jsonSource_LowerBoundSAT_20 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_LowerBoundSAT_20.addFeatures(features_LowerBoundSAT_20);
-cluster_LowerBoundSAT_20 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_LowerBoundSAT_20
-});
 var lyr_LowerBoundSAT_20 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_LowerBoundSAT_20, 
+                source:jsonSource_LowerBoundSAT_20, 
                 style: style_LowerBoundSAT_20,
                 popuplayertitle: 'Lower Bound SAT',
                 interactive: true,
@@ -549,13 +525,9 @@ var jsonSource_StartingSalary_21 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_StartingSalary_21.addFeatures(features_StartingSalary_21);
-cluster_StartingSalary_21 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_StartingSalary_21
-});
 var lyr_StartingSalary_21 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_StartingSalary_21, 
+                source:jsonSource_StartingSalary_21, 
                 style: style_StartingSalary_21,
                 popuplayertitle: 'Starting Salary',
                 interactive: true,

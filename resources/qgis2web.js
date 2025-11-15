@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-2467539.648990, -1654750.585059, 2421000.065701, 2167198.646426], map.getSize());
+map.getView().fit([-2680931.095907, -2003582.405685, 2561096.780870, 2094730.297977], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -1062,6 +1062,18 @@ let measuring = false;
 
 //layer search
 
+var searchLayer = new SearchLayer({
+    layer: lyr_Universities_Nov15_22,
+    colName: 'Abbr',
+    zoom: 10,
+    collapsed: true,
+    map: map,
+    maxResults: 10,
+});
+map.addControl(searchLayer);
+document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
+document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
+    
 
 //scalebar
 
