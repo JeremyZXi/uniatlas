@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-3211357.349857, -2172526.441082, 3285704.700520, 2906994.798303], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-4799710.713324, -3514734.283599, 4526806.721366, 3776906.619886], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
             //extent: [-13574071.535882, -5251477.478485, 13573994.894687, 12488829.953498],
             units: 'm'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-3211357.349857, -2172526.441082, 3285704.700520, 2906994.798303], map.getSize());
+map.getView().fit([-4799710.713324, -3514734.283599, 4526806.721366, 3776906.619886], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -127,8 +127,8 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = true;
-var doHover = true;
+var doHighlight = false;
+var doHover = false;
 
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
     var popupText = '';

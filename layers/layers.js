@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("ESRI:102003").setExtent([-3211357.349857, -2172526.441082, 3285704.700520, 2906994.798303]);
+//ol.proj.get("ESRI:102003").setExtent([-4799710.713324, -3514734.283599, 4526806.721366, 3776906.619886]);
 var wms_layers = [];
 
 
@@ -1339,7 +1339,7 @@ var lyr_ski_resorts_46 = new ol.layer.Vector({
                 source:jsonSource_ski_resorts_46, 
                 style: style_ski_resorts_46,
                 popuplayertitle: 'ski_resorts',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/ski_resorts_46.png" /> ski_resorts'
             });
 var format_beach_attributes_20240228_47 = new ol.format.GeoJSON();
