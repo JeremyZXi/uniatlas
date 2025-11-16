@@ -4,15 +4,15 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-3211357.349857, -2172526.441082, 3285704.700520, 2906994.798303], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
-            //extent: [-13570727.950615, -5248842.475303, 13573994.894687, 12488829.953498],
+            //extent: [-13574071.535882, -5251477.478485, 13573994.894687, 12488829.953498],
             units: 'm'})
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-2680931.095907, -2003582.405685, 2561096.780870, 2094730.297977], map.getSize());
+map.getView().fit([-3211357.349857, -2172526.441082, 3285704.700520, 2906994.798303], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -127,8 +127,8 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = false;
-var doHover = false;
+var doHighlight = true;
+var doHover = true;
 
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
     var popupText = '';
@@ -1063,7 +1063,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_Universities_Nov15_22,
+    layer: lyr_Universities_Nov15_45,
     colName: 'Abbr',
     zoom: 10,
     collapsed: true,
