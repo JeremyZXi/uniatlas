@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-4799710.713324, -3514734.283599, 4526806.721366, 3776906.619886], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-7337477.495830, -2091680.355909, 3582266.092087, 5235625.848737], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
             //extent: [-13574071.535882, -5251477.478485, 13573994.894687, 12488829.953498],
             units: 'm'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-4799710.713324, -3514734.283599, 4526806.721366, 3776906.619886], map.getSize());
+map.getView().fit([-7337477.495830, -2091680.355909, 3582266.092087, 5235625.848737], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -1063,7 +1063,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_Universities_Nov15_45,
+    layer: lyr_Universities_Nov21_50,
     colName: 'Abbr',
     zoom: 10,
     collapsed: true,
@@ -1081,22 +1081,11 @@ document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'S
 //layerswitcher
 
 var layerSwitcher = new ol.control.LayerSwitcher({
-    activationMode: 'click',
-	startActive: true,
-	tipLabel: "Layers",
-    target: 'top-right-container',
-	collapseLabel: '»',
-	collapseTipLabel: 'Close'
-    });
+    tipLabel: "Layers",
+    target: 'top-right-container'
+});
 map.addControl(layerSwitcher);
-if (hasTouchScreen || isSmallScreen) {
-	document.addEventListener('DOMContentLoaded', function() {
-		setTimeout(function() {
-			layerSwitcher.hidePanel();
-		}, 500);
-	});	
-}
-
+    
 
 
 
