@@ -1,31 +1,3 @@
-var size = 0;
-var placement = 'point';
-
-var style_USABorder_32 = function(feature, resolution){
-    var context = {
-        feature: feature,
-        variables: {}
-    };
-    
-    var labelText = ""; 
-    var value = feature.get("");
-    var labelFont = "10px, sans-serif";
-    var labelFill = "#000000";
-    var bufferColor = "";
-    var bufferWidth = 0;
-    var textAlign = "left";
-    var offsetX = 0;
-    var offsetY = 0;
-    var placement = 'point';
-    if ("" !== null) {
-        labelText = String("");
-    }
-    var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(214,214,214,0.6980392156862745)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}),fill: new ol.style.Fill({color: 'rgba(225,89,137,0.0)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-
-    return style;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2be87a6b32cebd839b9d1bf04ce7fc64c6d4d6f605b4294e67b61fba833953f
+size 975
