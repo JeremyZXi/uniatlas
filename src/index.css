@@ -4,10 +4,10 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100 antialiased;
+    @apply bg-[#0A3161] text-slate-100 antialiased;
   }
 
   * {
-    @apply border-slate-800;
+    @apply border-[#0A3161];
   }
 }
