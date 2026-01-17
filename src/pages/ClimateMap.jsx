@@ -1,16 +1,15 @@
 function ClimateMap() {
     return (
-        <div className="h-screen bg-white relative">
-            {/* Map frame */}
-            <div className="h-full w-full border border-[#0A3161]/20 rounded-md shadow-md overflow-hidden bg-white">
-                <iframe
-                    src="https://example.com"
-                    title="Climate WebGIS"
-                    className="w-full h-full"
-                    allowFullScreen
-                    loading="lazy"
-                />
-            </div>
+        <div className="h-screen w-full bg-white relative overflow-hidden">
+            {/* 让 iframe 真的吃满容器 */}
+            <iframe
+                src="https://www.wikipedia.org/"
+                title="WebGIS Placeholder"
+                className="w-full h-full"
+                allowFullScreen
+                loading="lazy"
+                style={{ border: "none", display: "block" }}
+            />
 
             {/* Floating Return Home Button */}
             <a
