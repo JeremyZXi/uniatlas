@@ -9,7 +9,6 @@ function HomePage() {
                     {/* Left: Logo + tagline */}
                     <section className="pt-2">
                         <div className="text-[#0A3161] leading-none">
-                            {/* NEW LAYOUT: UNI + LOGO on top, ATLAS below */}
                             <div>
                                 {/* Top row: UNI + hat logo */}
                                 <div className="flex items-center gap-4">
@@ -52,18 +51,17 @@ function HomePage() {
                         <div className="w-full max-w-xl space-y-8">
                             <HomeCard
                                 title="Climate & Colleges"
-                                onClick={() => console.log("go climate")}
+                                href="/climate"
                             />
                             <HomeCard
                                 title="Student life & Colleges"
-                                onClick={() => console.log("go student-life")}
+                                href="/student-life"
                             />
                             <HomeCard
                                 title="View all maps"
-                                onClick={() => console.log("go student-life")}
+                                href="/maps"
                             />
                         </div>
-
                     </section>
                 </div>
             </main>
@@ -71,11 +69,11 @@ function HomePage() {
     );
 }
 
-function HomeCard({ title, onClick }) {
+function HomeCard({ title, href }) {
     return (
-        <button
-            onClick={onClick}
-            className="w-full bg-white border border-black/10 rounded-sm shadow-[0_8px_18px_rgba(0,0,0,0.18)] px-10 py-12 text-center hover:shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition"
+        <a
+            href={href}
+            className="block w-full bg-white border border-black/10 rounded-sm shadow-[0_8px_18px_rgba(0,0,0,0.18)] px-10 py-12 text-center hover:shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition"
         >
       <span
           className="text-[#0A3161] italic font-[700] text-[26px] sm:text-[30px]"
@@ -83,7 +81,7 @@ function HomeCard({ title, onClick }) {
       >
         {title}
       </span>
-        </button>
+        </a>
     );
 }
 
