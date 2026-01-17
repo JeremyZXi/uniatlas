@@ -14,12 +14,18 @@ function Hero() {
           filters to find the best fit, then dive into details for each school.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
-          <button className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">
+          <a
+            href="/insights"
+            className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+          >
             Explore the map
-          </button>
-          <button className="rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200">
+          </a>
+          <a
+            href="/compare"
+            className="rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
             Compare colleges
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex-1 rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-cyan-950/40 p-6">
