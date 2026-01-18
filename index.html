@@ -1,13 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>uniatlas-remake</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Core viewport & compatibility -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary metadata -->
+  <title>UniAtlas — Interactive GIS</title>
+  <meta name="description" content="This map is dedicated to provide geographical information of U.S. institution or students who are applying for colleges.
+Hope this map could be useful for narrowing down the school lists based on geographical aspect of a university." />
+  <meta name="keywords" content="UniAtlas, WebGIS, interactive map, qgis, qgis2web, spatial data, GIS, mapping" />
+  <meta name="author" content="Asa Ma" />
+  <meta name="author" content="Jeremy Zhang" />
+
+  <!-- Canonical URL (important for SEO) -->
+  <link rel="canonical" href="https://uniatlas.netlify.app/" />  <!-- ← change to your real URL -->
+
+  <!-- Favicon & PWA icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0A3161" />
+
+  <!-- Open Graph (for Facebook, LinkedIn, Discord, WhatsApp previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="UniAtlas — Interactive Campus Maps" />
+  <meta property="og:description" content="Explore campus life and spatial data through an interactive WebGIS experience built with QGIS and React." />
+  <meta property="og:image" content="https://uniatlas.netlify.app/og-image.png" />
+  <meta property="og:url" content="https://uniatlas.keycas.cn/" />
+  <meta property="og:site_name" content="UniAtlas" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="UniAtlas — Interactive Campus Maps" />
+  <meta name="twitter:image" content="https://uniatlas.netlify.app/og-image.png" />
+  <meta name="twitter:description" content="A modern WebGIS platform for visualizing campus maps and student life data." />
+
+
+  <!-- Accessibility & search -->
+  <meta name="color-scheme" content="light dark" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
