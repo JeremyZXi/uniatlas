@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-4345258.739846, -2759921.950439, 3714175.139480, 3442376.668932], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-4345258.739846, -3108725.686789, 3714175.139480, 3791180.405281], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
             //extent: [-13585647.719689, -5263763.808306, 13588918.244904, 12493387.613392],
             units: 'm'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-4345258.739846, -2759921.950439, 3714175.139480, 3442376.668932], map.getSize());
+map.getView().fit([-4345258.739846, -3108725.686789, 3714175.139480, 3791180.405281], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -1062,6 +1062,18 @@ let measuring = false;
 
 //layer search
 
+var searchLayer = new SearchLayer({
+    layer: lyr_Universities_8,
+    colName: 'Abbr',
+    zoom: 10,
+    collapsed: true,
+    map: map,
+    maxResults: 10,
+});
+map.addControl(searchLayer);
+document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
+document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
+    
 
 //scalebar
 

@@ -1,19 +1,32 @@
+import { useState } from "react";
+
 function ClimateMap() {
+    const base = import.meta.env.BASE_URL;
+    const [loaded, setLoaded] = useState(false);
+
     return (
         <div className="h-screen w-full bg-white relative overflow-hidden">
-            {/* 让 iframe 真的吃满容器 */}
+            {/* Loading overlay */}
+            {!loaded && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-white z-10">
+                    <div className="animate-pulse text-lg font-medium mb-2">
+                        Loading map…
+                    </div>
+                    <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
+                </div>
+            )}
+
             <iframe
-                src="https://www.wikipedia.org/"
-                title="WebGIS Placeholder"
+                src={`${base}maps/CollegeClimate/index.html`}
+                title="Climate WebGIS"
                 className="w-full h-full"
                 allowFullScreen
-                loading="lazy"
                 style={{ border: "none", display: "block" }}
+                onLoad={() => setLoaded(true)}
             />
 
-            {/* Floating Return Home Button */}
             <a
-                href="/"
+                href={base}
                 className="fixed bottom-6 right-6 px-5 py-3 rounded-full shadow-lg transition hover:opacity-90"
                 style={{
                     backgroundColor: "#f1c44f",
