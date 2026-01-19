@@ -37,8 +37,17 @@ function Footer() {
                 Disclaimer: Data might not be accurate or up-to-date. Data are only accurate up to Nov 2025
               </p>
               <p className="mt-2 max-w-md text-slate-200">
-                By Asa Ma & Jeremy Zhang
+                By Asa Ma &{" "}
+                <a
+                    href="https://jeremyzxi.github.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-white transition"
+                >
+                  Jeremy Zhang
+                </a>
               </p>
+
 
 
 
