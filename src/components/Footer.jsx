@@ -28,6 +28,9 @@ function Footer() {
                 </a>
               </div>
               <p className="mt-2 max-w-md text-slate-200">
+                Version 0.9.0 Koror
+              </p>
+              <p className="mt-2 max-w-md text-slate-200">
                 Information are derived from U.S.News, Niche, Openstreetmap, and Google Maps
               </p>
               <p className="mt-2 max-w-md text-slate-200">
