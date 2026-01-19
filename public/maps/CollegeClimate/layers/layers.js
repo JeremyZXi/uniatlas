@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("ESRI:102003").setExtent([-4311048.958853, -2647023.899827, 3763020.653424, 3233405.794959]);
+//ol.proj.get("ESRI:102003").setExtent([-2951514.055422, -2447074.171750, 2713713.270570, 2066999.656496]);
 var wms_layers = [];
 
 
@@ -18,24 +18,24 @@ var lyr_TempMinAverage_1 = new ol.layer.Image({
         opacity: 1,
         
     title: 'TempMin-Average<br />\
-    <img src="styles/legend/TempMinAverage_1_0.png" /> <= -17.00<br />\
-    <img src="styles/legend/TempMinAverage_1_1.png" /> -17.00 - -13.00<br />\
-    <img src="styles/legend/TempMinAverage_1_2.png" /> -13.00 - -9.00<br />\
-    <img src="styles/legend/TempMinAverage_1_3.png" /> -9.00 - -5.00<br />\
-    <img src="styles/legend/TempMinAverage_1_4.png" /> -5.00 - -1.00<br />\
-    <img src="styles/legend/TempMinAverage_1_5.png" /> -1.00 - 3.00<br />\
-    <img src="styles/legend/TempMinAverage_1_6.png" /> 3.00 - 7.00<br />\
-    <img src="styles/legend/TempMinAverage_1_7.png" /> 7.00 - 11.00<br />\
-    <img src="styles/legend/TempMinAverage_1_8.png" /> 11.00 - 15.00<br />\
-    <img src="styles/legend/TempMinAverage_1_9.png" /> 15.00 - 19.00<br />\
-    <img src="styles/legend/TempMinAverage_1_10.png" /> 19.00 - 23.00<br />\
-    <img src="styles/legend/TempMinAverage_1_11.png" /> 23.00 - 27.00<br />\
-    <img src="styles/legend/TempMinAverage_1_12.png" /> 27.00 - 31.00<br />\
-    <img src="styles/legend/TempMinAverage_1_13.png" /> 31.00 - 35.00<br />\
-    <img src="styles/legend/TempMinAverage_1_14.png" /> 35.00 - 39.00<br />\
-    <img src="styles/legend/TempMinAverage_1_15.png" /> 39.00 - 43.00<br />\
-    <img src="styles/legend/TempMinAverage_1_16.png" /> 43.00 - 47.00<br />\
-    <img src="styles/legend/TempMinAverage_1_17.png" /> > 47.00<br />' ,
+    <img src="styles/legend/TempMinAverage_1_0.png" /> <= -17.0<br />\
+    <img src="styles/legend/TempMinAverage_1_1.png" /> -17.0 - -13.0<br />\
+    <img src="styles/legend/TempMinAverage_1_2.png" /> -13.0 - -9.0<br />\
+    <img src="styles/legend/TempMinAverage_1_3.png" /> -9.0 - -5.0<br />\
+    <img src="styles/legend/TempMinAverage_1_4.png" /> -5.0 - -1.0<br />\
+    <img src="styles/legend/TempMinAverage_1_5.png" /> -1.0 - 3.0<br />\
+    <img src="styles/legend/TempMinAverage_1_6.png" /> 3.0 - 7.0<br />\
+    <img src="styles/legend/TempMinAverage_1_7.png" /> 7.0 - 11.0<br />\
+    <img src="styles/legend/TempMinAverage_1_8.png" /> 11.0 - 15.0<br />\
+    <img src="styles/legend/TempMinAverage_1_9.png" /> 15.0 - 19.0<br />\
+    <img src="styles/legend/TempMinAverage_1_10.png" /> 19.0 - 23.0<br />\
+    <img src="styles/legend/TempMinAverage_1_11.png" /> 23.0 - 27.0<br />\
+    <img src="styles/legend/TempMinAverage_1_12.png" /> 27.0 - 31.0<br />\
+    <img src="styles/legend/TempMinAverage_1_13.png" /> 31.0 - 35.0<br />\
+    <img src="styles/legend/TempMinAverage_1_14.png" /> 35.0 - 39.0<br />\
+    <img src="styles/legend/TempMinAverage_1_15.png" /> 39.0 - 43.0<br />\
+    <img src="styles/legend/TempMinAverage_1_16.png" /> 43.0 - 47.0<br />\
+    <img src="styles/legend/TempMinAverage_1_17.png" /> > 47.0<br />' ,
         
         
         source: new ol.source.ImageStatic({
@@ -178,24 +178,24 @@ var lyr_TempMeanAverage_6 = new ol.layer.Image({
         opacity: 1,
         
     title: 'TempMean-Average<br />\
-    <img src="styles/legend/TempMeanAverage_6_0.png" /> <= -17.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_1.png" /> -17.0000 - -13.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_2.png" /> -13.0000 - -9.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_3.png" /> -9.0000 - -5.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_4.png" /> -5.0000 - -1.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_5.png" /> -1.0000 - 3.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_6.png" /> 3.0000 - 7.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_7.png" /> 7.0000 - 11.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_8.png" /> 11.0000 - 15.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_9.png" /> 15.0000 - 19.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_10.png" /> 19.0000 - 23.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_11.png" /> 23.0000 - 27.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_12.png" /> 27.0000 - 31.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_13.png" /> 31.0000 - 35.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_14.png" /> 35.0000 - 39.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_15.png" /> 39.0000 - 43.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_16.png" /> 43.0000 - 47.0000<br />\
-    <img src="styles/legend/TempMeanAverage_6_17.png" /> > 47.0000<br />' ,
+    <img src="styles/legend/TempMeanAverage_6_0.png" /> <= -17.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_1.png" /> -17.0 - -13.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_2.png" /> -13.0 - -9.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_3.png" /> -9.0 - -5.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_4.png" /> -5.0 - -1.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_5.png" /> -1.0 - 3.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_6.png" /> 3.0 - 7.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_7.png" /> 7.0 - 11.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_8.png" /> 11.0 - 15.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_9.png" /> 15.0 - 19.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_10.png" /> 19.0 - 23.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_11.png" /> 23.0 - 27.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_12.png" /> 27.0 - 31.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_13.png" /> 31.0 - 35.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_14.png" /> 35.0 - 39.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_15.png" /> 39.0 - 43.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_16.png" /> 43.0 - 47.0<br />\
+    <img src="styles/legend/TempMeanAverage_6_17.png" /> > 47.0<br />' ,
         
         
         source: new ol.source.ImageStatic({
@@ -338,24 +338,24 @@ var lyr_TempMaxAverage_11 = new ol.layer.Image({
         opacity: 1,
         
     title: 'TempMax-Average<br />\
-    <img src="styles/legend/TempMaxAverage_11_0.png" /> <= -17.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_1.png" /> -17.00 - -13.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_2.png" /> -13.00 - -9.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_3.png" /> -9.00 - -5.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_4.png" /> -5.00 - -1.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_5.png" /> -1.00 - 3.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_6.png" /> 3.00 - 7.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_7.png" /> 7.00 - 11.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_8.png" /> 11.00 - 15.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_9.png" /> 15.00 - 19.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_10.png" /> 19.00 - 23.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_11.png" /> 23.00 - 27.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_12.png" /> 27.00 - 31.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_13.png" /> 31.00 - 35.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_14.png" /> 35.00 - 39.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_15.png" /> 39.00 - 43.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_16.png" /> 43.00 - 47.00<br />\
-    <img src="styles/legend/TempMaxAverage_11_17.png" /> > 47.00<br />' ,
+    <img src="styles/legend/TempMaxAverage_11_0.png" /> <= -17.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_1.png" /> -17.0 - -13.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_2.png" /> -13.0 - -9.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_3.png" /> -9.0 - -5.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_4.png" /> -5.0 - -1.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_5.png" /> -1.0 - 3.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_6.png" /> 3.0 - 7.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_7.png" /> 7.0 - 11.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_8.png" /> 11.0 - 15.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_9.png" /> 15.0 - 19.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_10.png" /> 19.0 - 23.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_11.png" /> 23.0 - 27.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_12.png" /> 27.0 - 31.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_13.png" /> 31.0 - 35.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_14.png" /> 35.0 - 39.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_15.png" /> 39.0 - 43.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_16.png" /> 43.0 - 47.0<br />\
+    <img src="styles/legend/TempMaxAverage_11_17.png" /> > 47.0<br />' ,
         
         
         source: new ol.source.ImageStatic({
@@ -501,13 +501,9 @@ var jsonSource_Universities_16 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_Universities_16.addFeatures(features_Universities_16);
-cluster_Universities_16 = new ol.source.Cluster({
-  distance: 30,
-  source: jsonSource_Universities_16
-});
 var lyr_Universities_16 = new ol.layer.Vector({
                 declutter: false,
-                source:cluster_Universities_16, 
+                source:jsonSource_Universities_16, 
                 style: style_Universities_16,
                 popuplayertitle: 'Universities',
                 interactive: true,
