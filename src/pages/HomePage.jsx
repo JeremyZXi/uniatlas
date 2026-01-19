@@ -22,7 +22,7 @@ function HomePage() {
                                     <img
                                         src={hatLogo}
                                         alt="UniAtlas logo"
-                                        className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28"
+                                        className="w-36 h-36 sm:w-36 sm:h-36 md:w-36 md:h-36"
                                     />
                                 </div>
 
