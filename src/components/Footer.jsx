@@ -1,4 +1,5 @@
 import qgisLogo from "../assets/qgis.png";
+import keyCAS from "../assets/KeyCAS.svg"
 function Footer() {
   return (
       <footer id="resources" className="w-full">
@@ -13,7 +14,7 @@ function Footer() {
               >
                 UniAtlas
               </p>
-              {/* GitHub badge UNDER Netlify (forced block) */}
+
               <div>
                 <a
                     href="https://github.com/JeremyZXi/uniatlas"
@@ -60,7 +61,7 @@ function Footer() {
                   <img
                       src={qgisLogo}
                       alt="QGIS"
-                      className="block h-12 w-auto"
+                      className="block h-10 w-auto"
                   />
                 </a>
               </div>
@@ -74,12 +75,6 @@ function Footer() {
                   />
                 </a>
               </div>
-
-
-
-
-
-
               <div>
                 <a
                     href="https://github.com/qgis2web/qgis2web"
@@ -93,6 +88,11 @@ function Footer() {
                       className="h-10 w-auto"
                   />
                   <span className="text-slate-200 text-sm">qgis2web</span>
+                </a>
+                <a href="https://keycas.cn" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+
+                  <img src={keyCAS} alt="KeyCAS Logo" className="h-8 w-auto"/>
+                  <p className="text-sm">Powered by KeyCAS</p>
                 </a>
               </div>
 
