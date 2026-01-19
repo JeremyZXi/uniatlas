@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-4526710.969476, -2669550.573579, 3575696.589603, 3002134.717776], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-4311048.958853, -2647023.899827, 3763020.653424, 3233405.794959], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
             //extent: [-13585647.719689, -5263763.808306, 13588918.244904, 12493387.613392],
             units: 'm'})
@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-4526710.969476, -2669550.573579, 3575696.589603, 3002134.717776], map.getSize());
+map.getView().fit([-4311048.958853, -2647023.899827, 3763020.653424, 3233405.794959], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -477,7 +477,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Collegeinfo</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">CollegeClimate</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
@@ -1062,6 +1062,18 @@ let measuring = false;
 
 //layer search
 
+var searchLayer = new SearchLayer({
+    layer: lyr_Universities_16,
+    colName: 'Abbr',
+    zoom: 10,
+    collapsed: true,
+    map: map,
+    maxResults: 10,
+});
+map.addControl(searchLayer);
+document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
+document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
+    
 
 //scalebar
 
