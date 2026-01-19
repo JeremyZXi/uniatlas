@@ -1,3 +1,4 @@
+import qgisLogo from "../assets/qgis.png";
 function Footer() {
   return (
       <footer id="resources" className="w-full">
@@ -12,22 +13,6 @@ function Footer() {
               >
                 UniAtlas
               </p>
-              <p className="mt-2 max-w-md text-slate-200">
-                @maran add whatever description you want
-              </p>
-
-
-            </div>
-
-            {/* RIGHT SIDE — badges stacked vertically */}
-            <div className="space-y-3 md:text-left">
-              <p
-                  className="font-semibold text-white"
-                  style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-              >
-                add a sub title here to say something
-              </p>
-
               {/* GitHub badge UNDER Netlify (forced block) */}
               <div>
                 <a
@@ -42,7 +27,31 @@ function Footer() {
                   />
                 </a>
               </div>
+              <p className="mt-2 max-w-md text-slate-200">
+                Information are derived from U.S.News, Niche, Openstreetmap, and Google Maps
+              </p>
+              <p className="mt-2 max-w-md text-slate-200">
+                Disclaimer: Data might not be accurate or up-to-date. Data are only accurate up to Nov 2025
+              </p>
+              <p className="mt-2 max-w-md text-slate-200">
+                By Asa Ma & Jeremy Zhang
+              </p>
 
+
+
+            </div>
+
+            {/* RIGHT SIDE — badges stacked vertically */}
+            <div className="space-y-3 md:text-left">
+              <div>
+                <a href="https://qgis.org" target="_blank" rel="noreferrer">
+                  <img
+                      src={qgisLogo}
+                      alt="QGIS"
+                      className="block h-12 w-auto"
+                  />
+                </a>
+              </div>
               {/* Netlify badge (forced block) */}
               <div>
                 <a href="https://www.netlify.com">
@@ -56,8 +65,32 @@ function Footer() {
 
 
 
-              <p className="text-slate-200">I'm a placeholder</p>
-              <p className="text-slate-200">I'm a placeholder</p>
+
+
+
+              <div>
+                <a
+                    href="https://github.com/qgis2web/qgis2web"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2"
+                >
+                  <img
+                      src="https://raw.githubusercontent.com/qgis2web/qgis2web/master/icons/qgis2web.png"
+                      alt="QGIS2Web"
+                      className="h-10 w-auto"
+                  />
+                  <span className="text-slate-200 text-sm">qgis2web</span>
+                </a>
+              </div>
+
+
+
+
+
+
+
+
             </div>
           </div>
         </div>

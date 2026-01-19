@@ -1,6 +1,6 @@
 import hatLogo from "../assets/hat.svg";
 // adjust the path if HomePage is in a different folder
-
+import sampleMap from "../assets/sample_map.png"
 function HomePage() {
     return (
         <div className="min-h-screen bg-white flex flex-col">
@@ -44,13 +44,28 @@ function HomePage() {
                                 U.S. college decisions.
                             </p>
                         </div>
+                        <div className="mt-8 bg-gray-200 p-3  shadow-inner border border-gray-300">
+                            <img
+                                alt="GitHub Repo"
+                                src={sampleMap}
+                                className="block w-full  shadow-inner"
+                            />
+                        </div>
+
+
+
+
                     </section>
 
                     {/* Right: Cards + link */}
                     <section className="w-full flex flex-col items-end">
                         <div className="w-full max-w-xl space-y-8">
                             <HomeCard
-                                title="Climate & Colleges"
+                                title="College Info"
+                                href="/college-info"
+                            />
+                            <HomeCard
+                                title="College & Climate"
                                 href="/climate"
                             />
                             <HomeCard

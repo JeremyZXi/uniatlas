@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage.jsx";
 import ClimateMap from "./pages/ClimateMap.jsx";
 import StudentLifeMap from "./pages/StudentLifeMap.jsx";
+import CollegeInfo from "./pages/CollegeInfo.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         "/": <HomePage />,
         "/climate": <ClimateMap />,
         "/student-life": <StudentLifeMap />,
+        "/college-info":<CollegeInfo />
     };
 
     const Page = routes[path] ?? <NotFound />; // <-- THIS IS THE KEY LINE
