@@ -5,7 +5,7 @@ import ClimateMap from "./pages/ClimateMap.jsx";
 import StudentLifeMap from "./pages/StudentLifeMap.jsx";
 import CollegeInfo from "./pages/CollegeInfo.jsx";
 import NotFound from "./pages/NotFound.jsx";
-
+import BuyMeACoffee from "./pages/BuyMeACoffee.jsx";
 function App() {
     const path =
         window.location.pathname.replace(/\/$/, "") || "/";
@@ -14,7 +14,8 @@ function App() {
         "/": <HomePage />,
         "/climate": <ClimateMap />,
         "/student-life": <StudentLifeMap />,
-        "/college-info":<CollegeInfo />
+        "/college-info":<CollegeInfo />,
+        "/buy-me-a-coffee":<BuyMeACoffee/>
     };
 
     const Page = routes[path] ?? <NotFound />; // <-- THIS IS THE KEY LINE
