@@ -23,7 +23,7 @@ function App() {
         <div className="min-h-screen bg-white text-slate-100">
             <Header />
             <main>{Page}</main>
-            <Footer />
+            {/*<Footer />*/}
         </div>
     );
 }

@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function StudentLifeMap() {
     const base = import.meta.env.BASE_URL;
     const [loaded, setLoaded] = useState(false);
 
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, []);
+
     return (
         <div className="h-screen w-full bg-white relative overflow-hidden">
-            {/* Loading overlay */}
             {!loaded && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-white z-10">
                     <div className="animate-pulse text-lg font-medium mb-2">
@@ -27,7 +34,7 @@ function StudentLifeMap() {
 
             <a
                 href={base}
-                className="fixed bottom-6 right-6 px-5 py-3 rounded-full shadow-lg transition hover:opacity-90"
+                className="fixed bottom-6 left-6 px-5 py-3 rounded-full shadow-lg transition hover:opacity-90"
                 style={{
                     backgroundColor: "#f1c44f",
                     color: "#0A3161",

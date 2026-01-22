@@ -1,7 +1,10 @@
+import Footer from "../components/Footer.jsx";
+
 function NotFound() {
     const base = import.meta.env.BASE_URL || "/";
 
     return (
+        <div>
         <div className="min-h-[60vh] flex flex-col items-center justify-center bg-[#0A3161] text-white px-6 text-center">
             <h1 className="text-7xl font-bold mb-4">404</h1>
             <h2 className="text-2xl font-semibold mb-4">Page Not Found</h2>
@@ -20,6 +23,8 @@ function NotFound() {
             >
                 Return Home
             </a>
+        </div>
+        <Footer/>
         </div>
     );
 }

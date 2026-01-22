@@ -3,7 +3,6 @@ import ma from "../assets/ma.svg";
 
 const navigation = [
     { label: "Maps", href: "/maps" },
-    { label: "Contact", href: "/contact" },
     { label: "About us", href: "/about" },
     { label: "Buy me a coffee", href: "/coffee" },
 ];

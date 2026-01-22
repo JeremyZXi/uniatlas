@@ -27,7 +27,7 @@ function CollegeInfo() {
 
             <a
                 href={base}
-                className="fixed bottom-6 right-6 px-5 py-3 rounded-full shadow-lg transition hover:opacity-90"
+                className="fixed bottom-6 left-6 px-5 py-3 rounded-full shadow-lg transition hover:opacity-90"
                 style={{
                     backgroundColor: "#f1c44f",
                     color: "#0A3161",

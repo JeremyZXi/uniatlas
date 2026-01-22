@@ -1,8 +1,10 @@
 import hatLogo from "../assets/hat.svg";
 // adjust the path if HomePage is in a different folder
 import sampleMap from "../assets/sample_map.png"
+import Footer from "../components/Footer.jsx";
 function HomePage() {
     return (
+        <div>
         <div className="min-h-screen bg-white flex flex-col">
             <main className="flex-1 px-10 md:px-16 lg:px-20 py-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
@@ -81,6 +83,9 @@ function HomePage() {
                 </div>
             </main>
         </div>
+            <Footer />
+        </div>
+
     );
 }
 
