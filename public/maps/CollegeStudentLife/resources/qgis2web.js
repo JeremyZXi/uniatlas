@@ -4,18 +4,41 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-4345258.739846, -3108725.686789, 3714175.139480, 3791180.405281], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-4028955.919639, -3216874.660805, 5108661.466823, 3604576.607377], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'ESRI:102003',
-            //extent: [-13585647.719689, -5263763.808306, 13588918.244904, 12493387.613392],
+            //extent: [-13585647.719689, -8403804.093011, 13588918.244904, 12493387.613392],
             units: 'm'})
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-4345258.739846, -3108725.686789, 3714175.139480, 3791180.405281], map.getSize());
+map.getView().fit([-4028955.919639, -3216874.660805, 5108661.466823, 3604576.607377], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
+
+//change cursor
+function pointerOnFeature(evt) {
+    if (evt.dragging) {
+        return;
+    }
+    var hasFeature = map.hasFeatureAtPixel(evt.pixel, {
+        layerFilter: function(layer) {
+            return layer && (layer.get("interactive"));
+        }
+    });
+    map.getViewport().style.cursor = hasFeature ? "pointer" : "";
+}
+map.on('pointermove', pointerOnFeature);
+function styleCursorMove() {
+    map.on('pointerdrag', function() {
+        map.getViewport().style.cursor = "move";
+    });
+    map.on('pointerup', function() {
+        map.getViewport().style.cursor = "default";
+    });
+}
+styleCursorMove();
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -271,7 +294,7 @@ function onPointerMove(evt) {
                     highlightStyle = new ol.style.Style({
                         image: new ol.style.Circle({
                             fill: new ol.style.Fill({
-                                color: "#ffff00"
+                                color: "rgba(255, 255, 0, 1.00)"
                             }),
                             radius: radius
                         })
@@ -282,7 +305,7 @@ function onPointerMove(evt) {
 
                     highlightStyle = new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: '#ffff00',
+                            color: 'rgba(255, 255, 0, 1.00)',
                             lineDash: null,
                             width: featureWidth
                         })
@@ -291,7 +314,7 @@ function onPointerMove(evt) {
                 } else {
                     highlightStyle = new ol.style.Style({
                         fill: new ol.style.Fill({
-                            color: '#ffff00'
+                            color: 'rgba(255, 255, 0, 1.00)'
                         })
                     })
                 }
@@ -469,6 +492,7 @@ map.on('singleclick', onSingleClickWMS);
 //get container
 var topLeftContainerDiv = document.getElementById('top-left-container')
 var bottomLeftContainerDiv = document.getElementById('bottom-left-container')
+var topRightContainerDiv = document.getElementById('top-right-container')
 var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //title
@@ -494,7 +518,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (303 > 240) {
+        if (116 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -508,13 +532,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Welcome to the Uni Atlas<br />This map is created by Asa, dedicated to provide geographical information of U.S. institution or students who are applying for colleges.  Hope this map could be useful for narrowing down the school lists based on geographical aspect of a university.<br /><br />Have fun exploring the map.';
+                linkElement.innerHTML = 'Disclaimer:<br />Data points is likely to be incompleted and not up-to-date<br />For reference only<br />Derived from OverpassTurbo';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Welcome to the Uni Atlas<br />This map is created by Asa, dedicated to provide geographical information of U.S. institution or students who are applying for colleges.  Hope this map could be useful for narrowing down the school lists based on geographical aspect of a university.<br /><br />Have fun exploring the map.';
+            linkElement.innerHTML = 'Disclaimer:<br />Data points is likely to be incompleted and not up-to-date<br />For reference only<br />Derived from OverpassTurbo';
         }
 
         titleElement.appendChild(linkElement);
@@ -1063,7 +1087,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_Universities_8,
+    layer: lyr_Universities_11,
     colName: 'Abbr',
     zoom: 10,
     collapsed: true,
