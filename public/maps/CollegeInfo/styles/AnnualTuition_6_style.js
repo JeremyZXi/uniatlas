@@ -20,7 +20,7 @@ var style_AnnualTuition_6 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
-    if (value >= 28794.000000 && value <= 34590.000000) {
+    if (value >= 20000.000000 && value <= 30000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(0,32,77,1.0)'})}),
@@ -28,55 +28,39 @@ var style_AnnualTuition_6 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 34590.000000 && value <= 40386.000000) {
+                    } else if (value >= 30000.000000 && value <= 40000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(23,58,109,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(49,68,107,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 40386.000000 && value <= 46182.000000) {
+                    } else if (value >= 40000.000000 && value <= 50000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(75,84,108,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(102,105,112,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 46182.000000 && value <= 51978.000000) {
+                    } else if (value >= 50000.000000 && value <= 60000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(109,110,114,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(150,144,120,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 51978.000000 && value <= 57774.000000) {
+                    } else if (value >= 60000.000000 && value <= 70000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(142,138,121,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(204,187,105,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 57774.000000 && value <= 63570.000000) {
-            style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(180,168,114,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })]
-                    } else if (value >= 63570.000000 && value <= 69366.000000) {
-            style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(219,199,97,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })]
-                    } else if (value >= 69366.000000 && value <= 75162.000000) {
+                    } else if (value >= 70000.000000 && value <= 80000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(255,234,70,1.0)'})}),

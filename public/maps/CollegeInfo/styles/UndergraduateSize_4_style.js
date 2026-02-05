@@ -20,7 +20,7 @@ var style_UndergraduateSize_4 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
-    if (value >= 921.000000 && value <= 6657.750000) {
+    if (value >= 921.000000 && value <= 6000.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
@@ -28,55 +28,39 @@ var style_UndergraduateSize_4 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 6657.750000 && value <= 12394.500000) {
+                    } else if (value >= 6000.000000 && value <= 10000.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 5.71428 + size,
+        image: new ol.style.Circle({radius: 6.4 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 12394.500000 && value <= 18131.250000) {
+                    } else if (value >= 10000.000000 && value <= 16000.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 7.42858 + size,
+        image: new ol.style.Circle({radius: 8.8 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 18131.250000 && value <= 23868.000000) {
+                    } else if (value >= 16000.000000 && value <= 32000.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 9.14286 + size,
+        image: new ol.style.Circle({radius: 11.2 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 23868.000000 && value <= 29604.750000) {
+                    } else if (value >= 32000.000000 && value <= 48000.000000) {
             style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 10.85714 + size,
+        image: new ol.style.Circle({radius: 13.6 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 29604.750000 && value <= 35341.500000) {
-            style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 12.57142 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })]
-                    } else if (value >= 35341.500000 && value <= 41078.250000) {
-            style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 14.28572 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })]
-                    } else if (value >= 41078.250000 && value <= 46815.000000) {
+                    } else if (value >= 48000.000000 && value <= 60710.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 16.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(25,25,25,0.29411764705882354)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(229,229,229,1.0)'})}),

@@ -20,7 +20,15 @@ var style_QSRanking2026_7 = function(feature, resolution){
     if ("" !== null) {
         labelText = String("");
     }
-    if (value >= 1.000000 && value <= 30.000000) {
+    if (value >= 0.000000 && value <= 0.000000) {
+            style = [ new ol.style.Style({
+        image: new ol.style.Circle({radius: 4.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(143,143,143,1.0)'})}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })]
+                    } else if (value >= 1.000000 && value <= 30.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(0,68,27,1.0)'})}),
@@ -76,7 +84,7 @@ var style_QSRanking2026_7 = function(feature, resolution){
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })]
-                    } else if (value >= 590.000000 && value <= 668.000000) {
+                    } else if (value >= 590.000000 && value <= 1001.000000) {
             style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(0,0,0,0.25098039215686274)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2.28}), fill: new ol.style.Fill({color: 'rgba(247,252,245,1.0)'})}),
