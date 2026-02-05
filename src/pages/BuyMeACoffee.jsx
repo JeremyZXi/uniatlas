@@ -79,7 +79,7 @@ function makeBallTrajectory() {
         }
     }
 
-    // rotate keyframes：跟着弹跳走，给更多随机
+
     const rotate = [];
     for (let i = 0; i < y.length; i++) {
         const t = i / (y.length - 1);
